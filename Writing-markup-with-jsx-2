@@ -1,0 +1,25 @@
+//JSX is stricter than HTML. You have to close tags like <br />.
+//Your component also can’t return multiple JSX tags. 
+//You have to wrap them into a shared parent,
+//like a <div>...</div> or an empty <>...</> wrapper:
+
+function AboutPage() {
+  return (
+    <>
+      <h1>About</h1>
+      <p>Hello there.<br />How do you do?</p>
+    </>
+  );
+}
+
+//  Adding styles to my components..
+<img className="avatar" />
+
+//A CSS class with className. It works the same way as the HTML class attribute:
+
+// Then I write the CSS rules for it in a separate CSS file:
+
+/* In your CSS */
+.avatar {
+  border-radius: 50%;
+}
