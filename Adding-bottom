@@ -1,0 +1,38 @@
+
+
+function MyButton() {
+  return (
+    <button>I'm a button</button>
+  );
+}
+
+// NOW adding nesting componet in above function 
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
+
+//now final I can notice  that a Component name are  always  start with :-
+// Now combining both above..
+
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
+}
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
