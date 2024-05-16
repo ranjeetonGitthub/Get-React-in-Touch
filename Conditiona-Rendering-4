@@ -1,0 +1,34 @@
+
+//In React, there is no special syntax for writing conditions.
+//Instead, you’ll use the same techniques as you use when writing regular JavaScript code.
+//For example, you can use an if statement to conditionally include JSX:
+
+let content;
+if (isLoggedIn) {
+  content = <AdminPanel />;
+} else {
+  content = <LoginForm />;
+}
+return (
+  <div>
+    {content}
+  </div>
+);
+// More complex than above
+
+<div>
+  {isLoggedIn ? (
+    <AdminPanel />
+  ) : (
+    <LoginForm />
+  )}
+</div>
+
+//When I don’t need the else branch, you can also use a shorter logical && syntax:
+
+<div>
+  {isLoggedIn && <AdminPanel />}
+</div>
+
+// All of these approaches also work for conditionally specifying attributes. 
+//If you’re unfamiliar with some of this JavaScript syntax, you can start by always using if...else.
